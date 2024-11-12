@@ -1,0 +1,7 @@
+#account-icon {
+    background-color: pink;
+    height: 60%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+}

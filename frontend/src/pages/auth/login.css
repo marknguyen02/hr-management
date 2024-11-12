@@ -1,0 +1,170 @@
+#login-page {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/images/background-login.svg');
+    background-size: cover; /* Đảm bảo ảnh phủ toàn bộ */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+}
+
+/* Login page CSS */
+
+#login-panel {
+    background-color: #ffff;
+    width: 450px;
+    height: 550px;
+    margin-top: 40px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    button {
+        height: 35px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    input {
+        font-size: 16px;
+        width: 90%;
+        height: 45px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        caret-color: black;
+        
+        :focus {
+            border: 1px solid black;
+        }
+    }
+}
+
+#website-name {
+    margin-top: 10vh;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-name {
+    margin-right: auto;
+    margin-left: 4%;
+    font-size: 18px;
+}
+
+#username-input-box {
+    margin-top: 30px;
+}
+
+#password-input-box {
+    margin-top: 30px;
+}
+
+#forgot-password {
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: 5%;
+    cursor: pointer;
+    color: #5040ff;
+}
+
+#signin-button {
+    width: 150px;
+    background-color: #5040ff;
+    color: #ffffff;
+    border: none;
+}
+
+#signup-button {
+    width: 220px;
+    margin-top: 20px;
+    color: #5040ff;
+    border: 2px solid #5040ff;
+}
+
+#horizontal-line {
+    width: 95%;
+    border-top: 1px solid gray;
+    margin: 15px;
+}
+
+#mobile-store-logo {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    justify-content: center;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+/* Content CSS */
+
+#content-panel {
+    margin-left: 15vw;
+    margin-right: 10px;
+    width: 850px;
+    caret-color: transparent;
+}
+
+#section-menu {
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    p {
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    color: #1500ff;
+}
+
+#section-content {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-laptop-svg {
+    margin-top: auto;
+    margin-bottom: 50px;
+    margin-left: 5%;
+}
+
+
+#introduction-content {
+    font-size: 20px;
+    width: 80%;
+    font-style: italic;
+}
+
+#aboutus-content {
+    font-size: 20px;
+    width: 80%;
+    font-style: italic;
+}
+
+#contact-content {
+    font-style: italic;
+    font-size: 20px;
+    
+    div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
