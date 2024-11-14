@@ -1,4 +1,4 @@
-import './topbar.css';
+import "../../styles/components/topbar/topbar.css"
 import {useLocation} from 'react-router-dom';
 import Notification from './notification';
 import Message from './message';

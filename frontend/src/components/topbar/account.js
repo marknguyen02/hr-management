@@ -1,4 +1,4 @@
-import "./account.css";
+import "../../styles/components/topbar/account.css"
 
 function Account() {
     return (

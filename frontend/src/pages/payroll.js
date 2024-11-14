@@ -1,4 +1,4 @@
-import './payroll.css'
+import '../styles/pages/payroll.css'
 
 function Payroll() {
     return (

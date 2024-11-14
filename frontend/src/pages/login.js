@@ -1,12 +1,12 @@
+import '../styles/pages/login.css'
+import { login } from '../api.js';
 import { useState } from 'react';
-import './login.css'
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import laptopIllustration from '../../assets/images/website-overview-laptop.svg';
-import chplay from '../../assets/images/chplay.svg';
-import appstore from '../../assets/images/appstore.svg';
-import { login } from '../../api.js';
+import laptopIllustration from '../assets/images/website-overview-laptop.svg';
+import chplay from '../assets/images/chplay.svg';
+import appstore from '../assets/images/appstore.svg';
 
 
 function Login() {

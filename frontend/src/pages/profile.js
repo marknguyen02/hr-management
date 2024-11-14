@@ -1,9 +1,8 @@
-import './profile.css'
+import '../styles/pages/profile.css'
 
 function Profile() {
     return (
     <div id='profile-container'>
-        <h1>Nguyen Van Dung</h1>
     </div>
     )
 }

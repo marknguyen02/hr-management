@@ -1,4 +1,4 @@
-import './sidebar.css'
+import "../../styles/components/sidebar/sidebar.css"
 import {NavLink} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHome, faUser, faCalendar, faSackDollar} from '@fortawesome/free-solid-svg-icons'

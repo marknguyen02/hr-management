@@ -1,4 +1,4 @@
-import './calendar.css'
+import '../styles/pages/calendar.css'
 
 function Calendar() {
     return (

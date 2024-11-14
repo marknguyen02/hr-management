@@ -1,3 +1,6 @@
+import '../styles/pages/request.css'
+
+
 function Request() {
     return (
         <div>
