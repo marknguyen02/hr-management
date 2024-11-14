@@ -6,14 +6,24 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import laptopIllustration from '../../assets/images/website-overview-laptop.svg';
 import chplay from '../../assets/images/chplay.svg';
 import appstore from '../../assets/images/appstore.svg';
+import { login } from '../../api.js';
 
 
 function Login() {
 
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const handleSignIn = () => {
-        navigate('/');
+    const handleSignIn = async () => {
+        try {
+            const data = await login(username, password);
+            localStorage.setItem('user', JSON.stringify(data.user));
+            navigate('/');
+        } catch (err) {
+            setError('Tên đăng nhập hoặc mật khẩu không chính xác');
+        }
     };
 
 
@@ -38,17 +48,21 @@ function Login() {
         <div id='login-page'>
             <div id='login-panel'>
                 <h1 id='website-name'>OfficeLite</h1>
-                <input id='username-input-box' placeholder='Tên đăng nhập'></input>
-                <input id='password-input-box' type='password' placeholder='Mật khẩu'></input>
-                <p id='forgot-password'>Quên mật khẩu?</p>
+                <input id='username-input-box' onChange={e => setUsername(e.target.value)} placeholder='Tên đăng nhập'></input>
+                <input id='password-input-box' onChange={e => setPassword(e.target.value)} type='password' placeholder='Mật khẩu'></input>
+                <div id='password-error-message'>
+                    {error && <p id='error-message'>{error}</p>}
+                    <p id='forgot-password'>Quên mật khẩu?</p>
+                </div>
+
                 <button id='signin-button' onClick={handleSignIn}>Đăng nhập</button>
                 <div id="horizontal-line"></div>
                 <p>Cài đặt ứng dụng trên điện thoại</p>
                 <div id='mobile-store-logo'>
-                    <a target='_blank' href='https://play.google.com/store/apps'>
+                    <a target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps'>
                         <img src={chplay} alt='chplay'/>
                     </a>
-                    <a target='_blank' href='https://www.apple.com/app-store/'>
+                    <a target='_blank' rel="noopener noreferrer" href='https://www.apple.com/app-store/'>
                         <img src={appstore} alt='appstore'/>
                     </a>
                 </div>

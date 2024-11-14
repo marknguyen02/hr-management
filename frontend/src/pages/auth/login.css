@@ -14,7 +14,7 @@
 #login-panel {
     background-color: #ffff;
     width: 450px;
-    height: 550px;
+    height: 580px;
     margin-top: 40px;
     margin-left: 80px;
     display: flex;
@@ -66,12 +66,22 @@
     margin-top: 30px;
 }
 
+#password-error-message {
+    width: 90%;
+    display: flex;
+    height: 80px;
+}
+
 #forgot-password {
     text-decoration: underline;
     margin-left: auto;
-    margin-right: 5%;
     cursor: pointer;
     color: #5040ff;
+}
+
+#error-message {
+    width: 60%;
+    color: red;
 }
 
 #signin-button {

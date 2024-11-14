@@ -1,10 +1,10 @@
 import { Route, Routes} from 'react-router-dom'
 import Login from './pages/auth/login.js';
 import Layout from './components/layout.js';
-import Profile from './pages/home/profile.js';
-import Calendar from './pages/home/calendar.js';
-import Payroll from './pages/home/payroll.js';
-import Request from './pages/home/request.js';
+import Profile from './pages/profile.js';
+import Calendar from './pages/calendar.js';
+import Payroll from './pages/payroll.js';
+import Request from './pages/request.js';
 
 
 function App() {
